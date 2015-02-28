@@ -6,7 +6,7 @@ var express = require('express'),
     server = require('http').createServer(app)
 ;
 
-server.listen(8080);
+server.listen(1337);
 
 app.use(express.static(__dirname + '/build'));
 

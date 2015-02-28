@@ -61,17 +61,18 @@ gulp.task('build-styles', function() {
 
 	var task = gulp.src([
 			resourcesPath + '/css/**/*.styl',
+			resourcesPath + '/css/**/*.css',
 			'!' + resourcesPath + '/css/libs/'
 		])
 	;
 
     task.pipe(stylus());
 
-	if (deploy) {
+	// if (deploy) {
 		task.pipe(rename({suffix: '.min'}));
 		task.pipe(concat('site.css'));
 		task.pipe(minifycss());
-	}
+	// }
 	
 	task.pipe(gulp.dest(buildPath + '/css'));
 	
@@ -171,7 +172,7 @@ gulp.task('deploy', ['clean'], function() {
 
 	deploy = true;
 	//TODO: Make sure deploy path is used before testing!
-	//gulp.start('default');
+	gulp.start('default');
 
 	deploy = false;
 });
