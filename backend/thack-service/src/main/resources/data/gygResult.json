@@ -1,0 +1,653 @@
+{"_metadata": {
+    "descriptor": "GetYourGuide AG - we're hiring",
+    "url": "http:\/\/careers.getyourguide.com\/",
+    "apiVersion": "1",
+    "method": "getTourByQueryAction",
+    "date": "2015-02-28T19:31:25Z",
+    "status": "OK",
+    "query": "cnt_language=EN&currency=EUR&q=iata%3AZRH",
+    "availableLanguages": ["en", "de", "es", "fr", "it", "ru", "zh", "ja"],
+    "exchange": {
+        "rate": 1,
+        "currency": "EUR"
+    },
+    "totalCount": 41,
+    "limit": 10,
+    "offset": 0
+}, "data": {
+    "tours": [
+        {
+            "tour_id": 25860,
+            "tour_code": "Engel",
+            "cond_language": ["en", "de", "es"],
+            "title": "Lucerne and Engelberg Full-Day Tour from Zurich",
+            "abstract": "Explore Lucerne and Engelberg on a full-day trip from Zurich. Discover the most beautiful sights in Lucerne such as the Lion Monument, and visit the quaint mountain town of Engelberg. Explore the monastery and cheese manufacturer, or hike in the Alps.",
+            "bestseller": true,
+            "overall_rating": 4.25,
+            "number_of_ratings": 4,
+            "pictures": [
+                {
+                    "id": 127138,
+                    "description": "Lucerne and Engelberg Full-Day Tour from Zurich",
+                    "url": "http:\/\/cdn2.getyourguide.com\/img\/tour_img-127138-[format_id].jpg",
+                    "ssl_url": "https:\/\/img.getyourguide.com\/img\/tour_img-127138-[format_id].jpg"
+                }
+            ],
+            "coordinates": {
+                "lat": 47.3809024,
+                "long": 8.5371341
+            },
+            "price": {
+                "values": {
+                    "amount": 71.06
+                },
+                "description": "individual"
+            },
+            "categories": [
+                {
+                    "category_id": 4,
+                    "name": "Bus & Minivan Tours",
+                    "parent_id": 2
+                }
+            ],
+            "locations": [
+                {
+                    "location_id": 53,
+                    "type": "CITY",
+                    "name": "Engelberg",
+                    "english_name": "Engelberg",
+                    "country": "CH",
+                    "coordinates": {
+                        "lat": 46.82098,
+                        "long": 8.40439
+                    },
+                    "parent_id": 82,
+                    "viewport": {
+                        "sw_lat": 46.81287,
+                        "sw_long": 8.3849,
+                        "ne_lat": 46.828079,
+                        "ne_long": 8.43045
+                    }
+                }
+            ],
+            "url": "http:\/\/www.getyourguide.com\/engelberg-l53\/lucerne-and-engelberg-full-day-tour-from-zurich-t25860\/",
+            "durations": [
+                {
+                    "duration": 9.5,
+                    "unit": "hour"
+                }
+            ]
+        },
+        {
+            "tour_id": 13219,
+            "tour_code": "tour13219",
+            "cond_language": ["en", "fr", "de", "it", "ru", "es"],
+            "title": "Z\u00fcrichCARD: Save on Attractions, Transport, and Dining",
+            "abstract": "Enjoy Zurich to the fullest and save at the same time. With a Z\u00fcrichCARD valid for 24 or 72 hours, you get free travel on public transport, free admission to museums, delicious surprises at 17 restaurants, and discounts on selected souvenirs and tours.",
+            "bestseller": false,
+            "overall_rating": 4.3333,
+            "number_of_ratings": 9,
+            "pictures": [
+                {
+                    "id": 269659,
+                    "url": "http:\/\/cdn2.getyourguide.com\/img\/tour_img-269659-[format_id].jpg",
+                    "ssl_url": "https:\/\/img.getyourguide.com\/img\/tour_img-269659-[format_id].jpg"
+                }
+            ],
+            "coordinates": {
+                "lat": 47.3779486,
+                "long": 8.5409519
+            },
+            "price": {
+                "values": {
+                    "amount": 23.69
+                },
+                "description": "individual"
+            },
+            "categories": [
+                {
+                    "category_id": 101,
+                    "name": "City Cards"
+                }
+            ],
+            "locations": [
+                {
+                    "location_id": 55,
+                    "type": "CITY",
+                    "name": "Zurich",
+                    "english_name": "Zurich",
+                    "country": "CH",
+                    "coordinates": {
+                        "lat": 47.37706,
+                        "long": 8.53955
+                    },
+                    "parent_id": 83,
+                    "viewport": {
+                        "sw_lat": 47.3500804,
+                        "sw_long": 8.4997083,
+                        "ne_lat": 47.4040396,
+                        "ne_long": 8.5793917
+                    }
+                }
+            ],
+            "url": "http:\/\/www.getyourguide.com\/zurich-l55\/zuerichcard-save-on-attractions-transportation-and-dining-t13219\/",
+            "durations": [
+                {
+                    "duration": 24,
+                    "unit": "hour"
+                },
+                {
+                    "duration": 72,
+                    "unit": "hour"
+                }
+            ]
+        },
+        {
+            "tour_id": 921,
+            "tour_code": "tour921_Best of Zuri",
+            "cond_language": ["en", "de", "es", "zh", "ru", "ja"],
+            "title": "Zurich: 2-Hour Sightseeing Bus Tour",
+            "abstract": "Discover Zurich on this exciting bus tour. Explore city landmarks such as the picturesque Old Town and the gorgeous Swiss National Museum. Discover the place where Albert Einstein studied and enjoy the breathtaking view from the Z\u00fcrichberg.",
+            "bestseller": true,
+            "overall_rating": 4.3036,
+            "number_of_ratings": 56,
+            "pictures": [
+                {
+                    "id": 236855,
+                    "description": "Zurich: 2-Hour Sightseeing Bus Tour",
+                    "url": "http:\/\/cdn2.getyourguide.com\/img\/tour_img-236855-[format_id].jpg",
+                    "ssl_url": "https:\/\/img.getyourguide.com\/img\/tour_img-236855-[format_id].jpg"
+                }
+            ],
+            "coordinates": {
+                "lat": 47.38051,
+                "long": 8.537772
+            },
+            "price": {
+                "values": {
+                    "amount": 33.56
+                },
+                "description": "individual"
+            },
+            "categories": [
+                {
+                    "category_id": 4,
+                    "name": "Bus & Minivan Tours",
+                    "parent_id": 2
+                }
+            ],
+            "locations": [
+                {
+                    "location_id": 55,
+                    "type": "CITY",
+                    "name": "Zurich",
+                    "english_name": "Zurich",
+                    "country": "CH",
+                    "coordinates": {
+                        "lat": 47.37706,
+                        "long": 8.53955
+                    },
+                    "parent_id": 83,
+                    "viewport": {
+                        "sw_lat": 47.3500804,
+                        "sw_long": 8.4997083,
+                        "ne_lat": 47.4040396,
+                        "ne_long": 8.5793917
+                    }
+                }
+            ],
+            "url": "http:\/\/www.getyourguide.com\/zurich-l55\/zurich-2-hour-sightseeing-bus-tour-t921\/",
+            "durations": [
+                {
+                    "duration": 2.15,
+                    "unit": "hour"
+                }
+            ]
+        },
+        {
+            "tour_id": 1307,
+            "tour_code": "tour1307",
+            "cond_language": ["en", "de", "es"],
+            "title": "Z\u00fcrich - Extended City Tour",
+            "abstract": "Get to know Z\u00fcrich and its surroundings on a 4-hour extended city tour. Visit the Old Town with its churches, walk along the beautiful River Limmat, then ride on the aerial cable car for a breathtaking view over Lake Z\u00fcrich and the snow-covered Alps!",
+            "bestseller": false,
+            "overall_rating": 4.3438,
+            "number_of_ratings": 32,
+            "pictures": [
+                {
+                    "id": 3809,
+                    "description": "Z\u00fcrich",
+                    "url": "http:\/\/cdn2.getyourguide.com\/img\/tour_img-3809-[format_id].jpg",
+                    "ssl_url": "https:\/\/img.getyourguide.com\/img\/tour_img-3809-[format_id].jpg"
+                }
+            ],
+            "coordinates": {
+                "lat": 47.380466,
+                "long": 8.5376
+            },
+            "price": {
+                "values": {
+                    "amount": 53.3
+                },
+                "description": "individual"
+            },
+            "categories": [
+                {
+                    "category_id": 3,
+                    "name": "Walking Tours",
+                    "parent_id": 2
+                }
+            ],
+            "locations": [
+                {
+                    "location_id": 55,
+                    "type": "CITY",
+                    "name": "Zurich",
+                    "english_name": "Zurich",
+                    "country": "CH",
+                    "coordinates": {
+                        "lat": 47.37706,
+                        "long": 8.53955
+                    },
+                    "parent_id": 83,
+                    "viewport": {
+                        "sw_lat": 47.3500804,
+                        "sw_long": 8.4997083,
+                        "ne_lat": 47.4040396,
+                        "ne_long": 8.5793917
+                    }
+                }
+            ],
+            "url": "http:\/\/www.getyourguide.com\/zurich-l55\/zuerich-and-surroundings-extended-city-tour-t1307\/",
+            "durations": [
+                {
+                    "duration": 4.15,
+                    "unit": "hour"
+                }
+            ]
+        },
+        {
+            "tour_id": 1329,
+            "tour_code": "tour1329",
+            "cond_language": ["en", "de", "es"],
+            "title": "Mount Titlis Day Tour from Zurich or Lucerne",
+            "abstract": "Explore the charming Swiss city of Lucerne before taking an incredible ride up Mount Titlis on an exciting tour. Take in breathtaking views of the Swiss Alps from the Rotair revolving cable car and enjoy an inspiring visit to the Ice Grotto.",
+            "bestseller": true,
+            "overall_rating": 4.2667,
+            "number_of_ratings": 15,
+            "pictures": [
+                {
+                    "id": 315732,
+                    "url": "http:\/\/cdn2.getyourguide.com\/img\/tour_img-315732-[format_id].jpg",
+                    "ssl_url": "https:\/\/img.getyourguide.com\/img\/tour_img-315732-[format_id].jpg"
+                }
+            ],
+            "coordinates": {
+                "lat": 47.380466,
+                "long": 8.537621
+            },
+            "price": {
+                "values": {
+                    "amount": 127.32
+                },
+                "description": "individual"
+            },
+            "categories": [
+                {
+                    "category_id": 4,
+                    "name": "Bus & Minivan Tours",
+                    "parent_id": 2
+                }
+            ],
+            "locations": [
+                {
+                    "location_id": 55,
+                    "type": "CITY",
+                    "name": "Zurich",
+                    "english_name": "Zurich",
+                    "country": "CH",
+                    "coordinates": {
+                        "lat": 47.37706,
+                        "long": 8.53955
+                    },
+                    "parent_id": 83,
+                    "viewport": {
+                        "sw_lat": 47.3500804,
+                        "sw_long": 8.4997083,
+                        "ne_lat": 47.4040396,
+                        "ne_long": 8.5793917
+                    }
+                }
+            ],
+            "url": "http:\/\/www.getyourguide.com\/zurich-l55\/titlis-eternal-snow-and-glacier-from-zuerich-t1329\/",
+            "durations": [
+                {
+                    "duration": 5.5,
+                    "unit": "hour"
+                },
+                {
+                    "duration": 9.5,
+                    "unit": "hour"
+                }
+            ]
+        },
+        {
+            "tour_id": 13264,
+            "tour_code": "tour13264",
+            "cond_language": ["en", "de"],
+            "title": "Stories of the Old Town: 2-Hour Walking Tour of Zurich",
+            "abstract": "Enjoy a 2-hour guided walking tour through Zurich\u2019s Old Town and discover over 2,000 years of history. Come face to face with Zurich\u2019s past as you walk past historic buildings hearing tales of what once was.",
+            "bestseller": false,
+            "overall_rating": 4.5,
+            "number_of_ratings": 16,
+            "pictures": [
+                {
+                    "id": 55525,
+                    "description": "Lindenhof",
+                    "url": "http:\/\/cdn2.getyourguide.com\/img\/tour_img-55525-[format_id].jpg",
+                    "ssl_url": "https:\/\/img.getyourguide.com\/img\/tour_img-55525-[format_id].jpg"
+                }
+            ],
+            "coordinates": {
+                "lat": 47.3782167,
+                "long": 8.5385012
+            },
+            "price": {
+                "values": {
+                    "amount": 12.34
+                },
+                "description": "individual"
+            },
+            "categories": [
+                {
+                    "category_id": 3,
+                    "name": "Walking Tours",
+                    "parent_id": 2
+                }
+            ],
+            "locations": [
+                {
+                    "location_id": 55,
+                    "type": "CITY",
+                    "name": "Zurich",
+                    "english_name": "Zurich",
+                    "country": "CH",
+                    "coordinates": {
+                        "lat": 47.37706,
+                        "long": 8.53955
+                    },
+                    "parent_id": 83,
+                    "viewport": {
+                        "sw_lat": 47.3500804,
+                        "sw_long": 8.4997083,
+                        "ne_lat": 47.4040396,
+                        "ne_long": 8.5793917
+                    }
+                }
+            ],
+            "url": "http:\/\/www.getyourguide.com\/zurich-l55\/stories-of-the-old-town-discover-zuerichs-historic-center-t13264\/",
+            "durations": [
+                {
+                    "duration": 2,
+                    "unit": "hour"
+                }
+            ]
+        },
+        {
+            "tour_id": 42645,
+            "tour_code": "Jungfraujoch Luc\/Int",
+            "cond_language": ["es", "en", "de"],
+            "title": "Jungfraujoch Tour from Zurich, Lucerne or Interlaken",
+            "abstract": "Go to the top of Europe on a scenic day tour to Jungfraujoch in the Swiss Alps. Coach transfers are available from Zurich, Lucerne, or Interlaken, offering panoramic vistas of the snow-capped mountains, Europe\u2019s longest glacier, pretty hamlets, and more.",
+            "bestseller": true,
+            "overall_rating": 4.8,
+            "number_of_ratings": 5,
+            "pictures": [
+                {
+                    "id": 249247,
+                    "description": "Jungfraujoch Tour from Zurich, Lucerne or Interlaken",
+                    "url": "http:\/\/cdn2.getyourguide.com\/img\/tour_img-249247-[format_id].jpg",
+                    "ssl_url": "https:\/\/img.getyourguide.com\/img\/tour_img-249247-[format_id].jpg"
+                }
+            ],
+            "coordinates": {
+                "lat": 47.0496586,
+                "long": 8.3095211
+            },
+            "price": {
+                "values": {
+                    "amount": 185.55
+                },
+                "description": "individual"
+            },
+            "categories": [
+                {
+                    "category_id": 4,
+                    "name": "Bus & Minivan Tours",
+                    "parent_id": 2
+                }
+            ],
+            "locations": [
+                {
+                    "location_id": 55,
+                    "type": "CITY",
+                    "name": "Zurich",
+                    "english_name": "Zurich",
+                    "country": "CH",
+                    "coordinates": {
+                        "lat": 47.37706,
+                        "long": 8.53955
+                    },
+                    "parent_id": 83,
+                    "viewport": {
+                        "sw_lat": 47.3500804,
+                        "sw_long": 8.4997083,
+                        "ne_lat": 47.4040396,
+                        "ne_long": 8.5793917
+                    }
+                }
+            ],
+            "url": "http:\/\/www.getyourguide.com\/zurich-l55\/zurichlucerneinterlaken-to-jungfraujochtop-of-europe-t42645\/",
+            "durations": [
+                {
+                    "duration": 7,
+                    "unit": "hour"
+                },
+                {
+                    "duration": 12,
+                    "unit": "hour"
+                }
+            ]
+        },
+        {
+            "tour_id": 4759,
+            "tour_code": "tour4759",
+            "cond_language": ["en", "de", "es"],
+            "title": "Rhine Falls: Coach Tour from Zurich",
+            "abstract": "Enjoy a scenic drive to the Rhine Falls, Europe's biggest waterfall, with convenient departures from the Zurich airport and the city center. This coach tour is an ideal way to start or end your vacation to northern Switzerland and the Upper Rhine.",
+            "bestseller": true,
+            "overall_rating": 4.4444,
+            "number_of_ratings": 9,
+            "pictures": [
+                {
+                    "id": 15367,
+                    "description": "Getting close!",
+                    "url": "http:\/\/cdn2.getyourguide.com\/img\/tour_img-15367-[format_id].jpg",
+                    "ssl_url": "https:\/\/img.getyourguide.com\/img\/tour_img-15367-[format_id].jpg"
+                }
+            ],
+            "coordinates": {
+                "lat": 47.380394,
+                "long": 8.537643
+            },
+            "price": {
+                "values": {
+                    "amount": 48.36
+                },
+                "description": "individual"
+            },
+            "categories": [
+                {
+                    "category_id": 4,
+                    "name": "Bus & Minivan Tours",
+                    "parent_id": 2
+                }
+            ],
+            "locations": [
+                {
+                    "location_id": 55,
+                    "type": "CITY",
+                    "name": "Zurich",
+                    "english_name": "Zurich",
+                    "country": "CH",
+                    "coordinates": {
+                        "lat": 47.37706,
+                        "long": 8.53955
+                    },
+                    "parent_id": 83,
+                    "viewport": {
+                        "sw_lat": 47.3500804,
+                        "sw_long": 8.4997083,
+                        "ne_lat": 47.4040396,
+                        "ne_long": 8.5793917
+                    }
+                }
+            ],
+            "url": "http:\/\/www.getyourguide.com\/zurich-l55\/3-hour-round-trip-to-the-rhine-falls-from-zurich-t4759\/",
+            "durations": [
+                {
+                    "duration": 3.5,
+                    "unit": "hour"
+                }
+            ]
+        },
+        {
+            "tour_id": 11294,
+            "tour_code": "LBC Zurich",
+            "cond_language": ["en", "fr", "de", "it", "es"],
+            "title": "Zurich: Cycling Tour by the Lake and Limmat and Sihl Rivers",
+            "abstract": "Discover Zurich, the enchanting little-big city, on this informative 3 hour cycle tour. On Mondays, Wednesdays and Fridays you can enjoy the exclusivity of the historic city center and its many parks.",
+            "bestseller": false,
+            "overall_rating": 4.8889,
+            "number_of_ratings": 9,
+            "pictures": [
+                {
+                    "id": 46703,
+                    "description": "Zurich: Cycling Tour by the Lake and Limmat and Sihl Rivers",
+                    "url": "http:\/\/cdn2.getyourguide.com\/img\/tour_img-46703-[format_id].jpg",
+                    "ssl_url": "https:\/\/img.getyourguide.com\/img\/tour_img-46703-[format_id].jpg"
+                }
+            ],
+            "coordinates": {
+                "lat": 47.3778321,
+                "long": 8.5396384
+            },
+            "price": {
+                "values": {
+                    "amount": 148.05
+                },
+                "description": "group"
+            },
+            "categories": [
+                {
+                    "category_id": 7,
+                    "name": "Bike Tours",
+                    "parent_id": 2
+                }
+            ],
+            "locations": [
+                {
+                    "location_id": 55,
+                    "type": "CITY",
+                    "name": "Zurich",
+                    "english_name": "Zurich",
+                    "country": "CH",
+                    "coordinates": {
+                        "lat": 47.37706,
+                        "long": 8.53955
+                    },
+                    "parent_id": 83,
+                    "viewport": {
+                        "sw_lat": 47.3500804,
+                        "sw_long": 8.4997083,
+                        "ne_lat": 47.4040396,
+                        "ne_long": 8.5793917
+                    }
+                }
+            ],
+            "url": "http:\/\/www.getyourguide.com\/zurich-l55\/zurich-bike-tour-t11294\/",
+            "durations": [
+                {
+                    "duration": 3,
+                    "unit": "hour"
+                }
+            ]
+        },
+        {
+            "tour_id": 42647,
+            "tour_code": "Grindelwald\/Interlak",
+            "cond_language": ["es", "en", "de"],
+            "title": "Grindelwald & Interlaken Day Tour from Lucerne \/ Zurich",
+            "abstract": "Discover one of Switzerland\u2019s most attractive Alpine landscapes on a full-day tour to the idyllic Bernese Oberland. Explore the Jungfrau mountain region and the mountain resorts of Grindelwald and Interlaken, taking a scenic train ride between the two.",
+            "bestseller": false,
+            "overall_rating": 5,
+            "number_of_ratings": 2,
+            "pictures": [
+                {
+                    "id": 249255,
+                    "description": "Grindelwald & Interlaken Day Tour from Lucerne \/ Zurich",
+                    "url": "http:\/\/cdn2.getyourguide.com\/img\/tour_img-249255-[format_id].jpg",
+                    "ssl_url": "https:\/\/img.getyourguide.com\/img\/tour_img-249255-[format_id].jpg"
+                }
+            ],
+            "coordinates": {
+                "lat": 47.049644,
+                "long": 8.3095278
+            },
+            "price": {
+                "values": {
+                    "amount": 76
+                },
+                "description": "individual"
+            },
+            "categories": [
+                {
+                    "category_id": 4,
+                    "name": "Bus & Minivan Tours",
+                    "parent_id": 2
+                }
+            ],
+            "locations": [
+                {
+                    "location_id": 55,
+                    "type": "CITY",
+                    "name": "Zurich",
+                    "english_name": "Zurich",
+                    "country": "CH",
+                    "coordinates": {
+                        "lat": 47.37706,
+                        "long": 8.53955
+                    },
+                    "parent_id": 83,
+                    "viewport": {
+                        "sw_lat": 47.3500804,
+                        "sw_long": 8.4997083,
+                        "ne_lat": 47.4040396,
+                        "ne_long": 8.5793917
+                    }
+                }
+            ],
+            "url": "http:\/\/www.getyourguide.com\/zurich-l55\/day-tour-grindelwald-interlaken-from-lucernezurich-t42647\/",
+            "durations": [
+                {
+                    "duration": 10,
+                    "unit": "hour"
+                },
+                {
+                    "duration": 12,
+                    "unit": "hour"
+                }
+            ]
+        }
+    ]
+}}

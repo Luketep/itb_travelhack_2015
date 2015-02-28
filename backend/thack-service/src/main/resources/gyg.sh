@@ -1,1 +1,1 @@
-curl -H "Accept: application/json" -H "X-ACCESS-TOKEN: pcNtMZiCIwBd4Uu9JRht4dV0ZMLgifCX0nDtJW6mWQoaFiwU" -X GET "https://api-getyourguide-com-test3.gygtest.com/1/tours?cnt_language=EN&currency=EUR&q=IATA:ZRH"
+curl -H "Accept: application/json" -H "X-ACCESS-TOKEN: pcNtMZiCIwBd4Uu9JRht4dV0ZMLgifCX0nDtJW6mWQoaFiwU" -X GET "https://api-getyourguide-com-test3.gygtest.com/1/tours?cnt_language=EN&currency=EUR&q=iata:ZRH"
