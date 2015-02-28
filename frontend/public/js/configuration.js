@@ -10,7 +10,8 @@ require.config({
 		'text': 'libs/text',
 		'json2': 'libs/json2-min',
 		'bootstrap': 'libs/bootstrap-min',
-		'date': 'libs/date'
+		'date': 'libs/date',
+        'd3': "http://d3js.org/d3.v3.min"
 	},
 	shim: {
 		'bootstrap': {

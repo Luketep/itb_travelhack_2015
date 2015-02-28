@@ -15,7 +15,7 @@ function SearchModel(
 			var source = this.get('source'),
 				date = this.get('date');
 
-			return this.baseUrl + source + '/' + date;
+			return this.baseUrl + source + '/' + date ;
 		}
 	});
 });
