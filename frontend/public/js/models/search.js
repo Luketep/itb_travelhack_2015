@@ -10,6 +10,12 @@ function SearchModel(
 ) {
 	'use strict';
 	return Backbone.Model.extend({
-		url: '/thack-api/services/search/Berlin/2015-03-29T12:00:01.000Z'
+		baseUrl: '/thack-api/services/search/',
+		url: function() {
+			var source = this.get('source'),
+				date = this.get('date');
+
+			return this.baseUrl + source + '/' + date;
+		}
 	});
 });

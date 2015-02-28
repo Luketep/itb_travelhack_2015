@@ -27,7 +27,7 @@ function SiteView(
 		},
 		render: function render() {
 			this.$el.html(Mustache.render(template, {
-				travelData: this.travelData.location + ' ' + this.travelData.date
+				travelData: this.travelData.source + ' ' + this.travelData.date
 			}));
 			return this;
 		}
