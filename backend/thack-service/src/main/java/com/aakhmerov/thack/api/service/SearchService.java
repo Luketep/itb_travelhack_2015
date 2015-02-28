@@ -1,17 +1,19 @@
 package com.aakhmerov.thack.api.service;
 
-import com.aakhmerov.thack.api.service.tos.SearchResultTO;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.datatype.joda.JodaModule;
-import org.apache.commons.io.IOUtils;
+import com.aakhmerov.thack.api.service.gyg.GygService;
+import com.aakhmerov.thack.api.service.gyg.tos.GygResponseTO;
+import com.aakhmerov.thack.api.service.sabre.SabreService;
+import com.aakhmerov.thack.api.service.sabre.tos.SabreDestinationTO;
+import com.aakhmerov.thack.api.service.tos.aggregated.AggregatedDestinationTO;
+import com.aakhmerov.thack.api.service.tos.aggregated.SearchResultTO;
 import org.joda.time.DateTime;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 
-import java.io.IOException;
-import java.io.InputStream;
+import java.util.List;
 
 /**
  * Created by aakhmerov on 28.02.15.
@@ -19,6 +21,12 @@ import java.io.InputStream;
 @Service
 public class SearchService {
     private static final Logger logger = LoggerFactory.getLogger(SearchService.class);
+
+    @Autowired
+    private SabreService sabreService;
+
+    @Autowired
+    private GygService gygService;
 
     /**
      * Method to request weekend search
@@ -33,16 +41,17 @@ public class SearchService {
      * @return - wrapping TO
      */
     public SearchResultTO find(String from, DateTime parsedDate) {
-        ObjectMapper om = new ObjectMapper();
-        om.registerModule(new JodaModule());
+        SearchResultTO result = new SearchResultTO();
+        DateTime departure = parsedDate;
+        DateTime arrival = departure.plusDays(1);
+        List<SabreDestinationTO> destinations = sabreService.getDestinations(from, departure, arrival);
 
-        InputStream source = this.getClass().getClassLoader().getResourceAsStream("data/searchResult.json");
-        SearchResultTO result = null;
-        try {
-            String sourceString = IOUtils.toString(source);
-            result = om.readValue(sourceString,SearchResultTO.class);
-        } catch (IOException e) {
-            logger.error("cant get flights",e);
+        for (SabreDestinationTO destination : destinations) {
+            AggregatedDestinationTO toAdd = new AggregatedDestinationTO();
+            GygResponseTO wrappedTours = gygService.getTours(destination.getDestinationLocation());
+            toAdd.setTours(wrappedTours.getData().getTours());
+            toAdd.setSabreInfo(destination);
+            result.getDestinations().add(toAdd);
         }
         return result;
     }

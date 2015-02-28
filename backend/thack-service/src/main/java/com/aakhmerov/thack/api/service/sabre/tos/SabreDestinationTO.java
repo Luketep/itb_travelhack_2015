@@ -1,8 +1,11 @@
 package com.aakhmerov.thack.api.service.sabre.tos;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  * Created by aakhmerov on 28.02.15.
  */
+@XmlRootElement
 public class SabreDestinationTO {
 
     private String DestinationLocation;

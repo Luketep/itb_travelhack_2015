@@ -2,11 +2,13 @@ package com.aakhmerov.thack.api.service.gyg.tos;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
 
 /**
  * Created by aakhmerov on 28.02.15.
  */
+@XmlRootElement
 public class TourTO {
     @JsonProperty("tour_id")
     private Long id;

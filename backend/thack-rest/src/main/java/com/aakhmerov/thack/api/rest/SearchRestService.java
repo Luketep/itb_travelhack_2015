@@ -1,8 +1,8 @@
 package com.aakhmerov.thack.api.rest;
 
-import com.aakhmerov.thack.api.domain.entities.Status;
 import com.aakhmerov.thack.api.service.SearchService;
-import com.aakhmerov.thack.api.service.tos.SearchResultTO;
+
+import com.aakhmerov.thack.api.service.tos.aggregated.SearchResultTO;
 import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -16,6 +16,7 @@ import javax.ws.rs.core.MediaType;
 @Path("/search")
 @Component
 public class SearchRestService {
+    private static final String TXL = "TXL";
     @Autowired
     private SearchService searchService;
 
@@ -28,6 +29,7 @@ public class SearchRestService {
     @Path("/{from}/{date}")
     public SearchResultTO getStatus(@PathParam("from") String from,@PathParam("date") String date) {
         DateTime parsedDate = DateTime.parse(date);
-        return this.searchService.find(from, parsedDate);
+//      TODO: replace with real source mapping
+        return this.searchService.find(TXL, parsedDate);
     }
 }

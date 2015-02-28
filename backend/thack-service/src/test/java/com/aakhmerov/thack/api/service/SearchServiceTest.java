@@ -1,6 +1,6 @@
 package com.aakhmerov.thack.api.service;
 
-import com.aakhmerov.thack.api.service.tos.SearchResultTO;
+import com.aakhmerov.thack.api.service.tos.aggregated.SearchResultTO;
 import org.joda.time.DateTime;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -20,13 +20,16 @@ public class SearchServiceTest {
     private SearchService searchService;
     @Test
     public void testFind() throws Exception {
-        SearchResultTO result = searchService.find("test", new DateTime());
+        long start = System.currentTimeMillis();
+        SearchResultTO result = searchService.find("TXL", new DateTime());
+        long end = System.currentTimeMillis();
+        System.out.println("TOOK [" + (end-start) + "] ms");
         assertThat(result,is(notNullValue()));
         assertThat(result.getDestinations(),is(notNullValue()));
-        assertThat(result.getDestinations().size(),is(1));
+        assertThat(result.getDestinations().size(),is(11));
         assertThat(result.getDestinations().get(0),is(notNullValue()));
-        assertThat(result.getDestinations().get(0).getCity(),is("Hamburg"));
-        assertThat(result.getDestinations().get(0).getEvents(),is(notNullValue()));
-        assertThat(result.getDestinations().get(0).getEvents().size(),is(2));
+        assertThat(result.getDestinations().get(0).getSabreInfo().getDestinationLocation(),is("ZRH"));
+        assertThat(result.getDestinations().get(0).getTours(),is(notNullValue()));
+        assertThat(result.getDestinations().get(0).getTours().size(),is(10));
     }
 }

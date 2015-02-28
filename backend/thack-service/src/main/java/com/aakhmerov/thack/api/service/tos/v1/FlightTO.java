@@ -1,4 +1,4 @@
-package com.aakhmerov.thack.api.service.tos;
+package com.aakhmerov.thack.api.service.tos.v1;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
