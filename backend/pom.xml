@@ -9,8 +9,9 @@
     <name>THack backend</name>
 
     <modules>
-        <module>scorecompass_api</module>
-        <module>scorecompass_util</module>
+        <module>thack-rest</module>
+        <module>thack-service</module>
+        <module>thack-domain</module>
     </modules>
 
     <distributionManagement>
