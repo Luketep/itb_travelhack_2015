@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/thack-backend.iml" filepath="$PROJECT_DIR$/thack-backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thack-domain/thack-domain.iml" filepath="$PROJECT_DIR$/thack-domain/thack-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thack-rest/thack-rest.iml" filepath="$PROJECT_DIR$/thack-rest/thack-rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thack-service/thack-service.iml" filepath="$PROJECT_DIR$/thack-service/thack-service.iml" />
+    </modules>
+  </component>
+</project>
+

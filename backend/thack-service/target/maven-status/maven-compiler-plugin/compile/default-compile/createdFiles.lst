@@ -1,0 +1,9 @@
+com/aakhmerov/thack/api/service/tos/WeatherTO.class
+com/aakhmerov/thack/api/service/StatusService.class
+com/aakhmerov/thack/api/service/tos/SearchResultTO.class
+com/aakhmerov/thack/api/service/tos/AttractionTO.class
+com/aakhmerov/thack/api/service/SearchService.class
+com/aakhmerov/thack/api/service/tos/FlightTO.class
+com/aakhmerov/thack/api/service/tos/DestinationTO.class
+com/aakhmerov/thack/api/service/tos/FlightOptionTO.class
+com/aakhmerov/thack/api/service/tos/FlightPointTO.class

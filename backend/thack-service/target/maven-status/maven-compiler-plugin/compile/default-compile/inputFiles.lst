@@ -1,0 +1,9 @@
+/home/phil/GitProjects/thack/backend/thack-service/src/main/java/com/aakhmerov/thack/api/service/tos/FlightTO.java
+/home/phil/GitProjects/thack/backend/thack-service/src/main/java/com/aakhmerov/thack/api/service/SearchService.java
+/home/phil/GitProjects/thack/backend/thack-service/src/main/java/com/aakhmerov/thack/api/service/tos/FlightPointTO.java
+/home/phil/GitProjects/thack/backend/thack-service/src/main/java/com/aakhmerov/thack/api/service/tos/DestinationTO.java
+/home/phil/GitProjects/thack/backend/thack-service/src/main/java/com/aakhmerov/thack/api/service/tos/AttractionTO.java
+/home/phil/GitProjects/thack/backend/thack-service/src/main/java/com/aakhmerov/thack/api/service/tos/WeatherTO.java
+/home/phil/GitProjects/thack/backend/thack-service/src/main/java/com/aakhmerov/thack/api/service/tos/SearchResultTO.java
+/home/phil/GitProjects/thack/backend/thack-service/src/main/java/com/aakhmerov/thack/api/service/StatusService.java
+/home/phil/GitProjects/thack/backend/thack-service/src/main/java/com/aakhmerov/thack/api/service/tos/FlightOptionTO.java

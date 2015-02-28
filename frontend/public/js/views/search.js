@@ -41,10 +41,14 @@ function SearchView(
 		},
 		submit: function submit(event) {
 			event.preventDefault();
+			var source = this.$el.find('#source').val(),
+				date = this.$el.find('#startDate').val()
+
 			this.model.set({
-				date: this.$el.find('#startDate').val(),
-				location: this.$el.find('#location').val()
-			});
+				source: source,
+				date: date
+			})
+
 			this.model.fetch({
 				success: this.success.bind(this),
 				error: this.error.bind(this)
