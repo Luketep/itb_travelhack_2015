@@ -1,0 +1,180 @@
+{
+    "OriginLocation": "TXL",
+    "FareInfo": [
+        {
+            "CurrencyCode": "EUR",
+            "LowestNonStopFare": 112.03,
+            "LowestFare": 112.03,
+            "DestinationLocation": "ZRH",
+            "DepartureDateTime": "2015-03-28T00:00:00",
+            "ReturnDateTime": "2015-03-29T00:00:00",
+            "Links": [
+                {
+                    "rel": "shop",
+                    "href": "https://api.test.sabre.com/v1/shop/flights?origin=TXL&destination=ZRH&departuredate=2015-03-28&returndate=2015-03-29&pointofsalecountry=DE"
+                }
+            ],
+            "DestinationRank": 1
+        },
+        {
+            "CurrencyCode": "EUR",
+            "LowestNonStopFare": 139.15,
+            "LowestFare": 139.15,
+            "DestinationLocation": "MUC",
+            "DepartureDateTime": "2015-03-28T00:00:00",
+            "ReturnDateTime": "2015-03-29T00:00:00",
+            "Links": [
+                {
+                    "rel": "shop",
+                    "href": "https://api.test.sabre.com/v1/shop/flights?origin=TXL&destination=MUC&departuredate=2015-03-28&returndate=2015-03-29&pointofsalecountry=DE"
+                }
+            ],
+            "DestinationRank": 2
+        },
+        {
+            "CurrencyCode": "EUR",
+            "LowestNonStopFare": 118.21,
+            "LowestFare": 118.21,
+            "DestinationLocation": "VIE",
+            "DepartureDateTime": "2015-03-28T00:00:00",
+            "ReturnDateTime": "2015-03-29T00:00:00",
+            "Links": [
+                {
+                    "rel": "shop",
+                    "href": "https://api.test.sabre.com/v1/shop/flights?origin=TXL&destination=VIE&departuredate=2015-03-28&returndate=2015-03-29&pointofsalecountry=DE"
+                }
+            ],
+            "DestinationRank": 3
+        },
+        {
+            "CurrencyCode": "EUR",
+            "LowestNonStopFare": 101.16,
+            "LowestFare": 101.16,
+            "DestinationLocation": "LHR",
+            "DepartureDateTime": "2015-03-28T00:00:00",
+            "ReturnDateTime": "2015-03-29T00:00:00",
+            "Links": [
+                {
+                    "rel": "shop",
+                    "href": "https://api.test.sabre.com/v1/shop/flights?origin=TXL&destination=LHR&departuredate=2015-03-28&returndate=2015-03-29&pointofsalecountry=DE"
+                }
+            ],
+            "DestinationRank": 4
+        },
+        {
+            "CurrencyCode": "EUR",
+            "LowestNonStopFare": 125.22,
+            "LowestFare": 125.22,
+            "DestinationLocation": "FRA",
+            "DepartureDateTime": "2015-03-28T00:00:00",
+            "ReturnDateTime": "2015-03-29T00:00:00",
+            "Links": [
+                {
+                    "rel": "shop",
+                    "href": "https://api.test.sabre.com/v1/shop/flights?origin=TXL&destination=FRA&departuredate=2015-03-28&returndate=2015-03-29&pointofsalecountry=DE"
+                }
+            ],
+            "DestinationRank": 5
+        },
+        {
+            "CurrencyCode": "EUR",
+            "LowestNonStopFare": 95.23,
+            "LowestFare": 95.23,
+            "DestinationLocation": "STR",
+            "DepartureDateTime": "2015-03-28T00:00:00",
+            "ReturnDateTime": "2015-03-29T00:00:00",
+            "Links": [
+                {
+                    "rel": "shop",
+                    "href": "https://api.test.sabre.com/v1/shop/flights?origin=TXL&destination=STR&departuredate=2015-03-28&returndate=2015-03-29&pointofsalecountry=DE"
+                }
+            ],
+            "DestinationRank": 6
+        },
+        {
+            "CurrencyCode": "EUR",
+            "LowestNonStopFare": 97.43,
+            "LowestFare": 97.43,
+            "DestinationLocation": "IST",
+            "DepartureDateTime": "2015-03-28T00:00:00",
+            "ReturnDateTime": "2015-03-29T00:00:00",
+            "Links": [
+                {
+                    "rel": "shop",
+                    "href": "https://api.test.sabre.com/v1/shop/flights?origin=TXL&destination=IST&departuredate=2015-03-28&returndate=2015-03-29&pointofsalecountry=DE"
+                }
+            ],
+            "DestinationRank": 7
+        },
+        {
+            "CurrencyCode": "EUR",
+            "LowestNonStopFare": "N/A",
+            "LowestFare": 536.61,
+            "DestinationLocation": "BKK",
+            "DepartureDateTime": "2015-03-28T00:00:00",
+            "ReturnDateTime": "2015-03-29T00:00:00",
+            "Links": [
+                {
+                    "rel": "shop",
+                    "href": "https://api.test.sabre.com/v1/shop/flights?origin=TXL&destination=BKK&departuredate=2015-03-28&returndate=2015-03-29&pointofsalecountry=DE"
+                }
+            ],
+            "DestinationRank": 8
+        },
+        {
+            "CurrencyCode": "EUR",
+            "LowestNonStopFare": 94.8,
+            "LowestFare": 94.8,
+            "DestinationLocation": "CGN",
+            "DepartureDateTime": "2015-03-28T00:00:00",
+            "ReturnDateTime": "2015-03-29T00:00:00",
+            "Links": [
+                {
+                    "rel": "shop",
+                    "href": "https://api.test.sabre.com/v1/shop/flights?origin=TXL&destination=CGN&departuredate=2015-03-28&returndate=2015-03-29&pointofsalecountry=DE"
+                }
+            ],
+            "DestinationRank": 9
+        },
+        {
+            "CurrencyCode": "EUR",
+            "LowestNonStopFare": 97.01,
+            "LowestFare": 97.01,
+            "DestinationLocation": "DUS",
+            "DepartureDateTime": "2015-03-28T00:00:00",
+            "ReturnDateTime": "2015-03-29T00:00:00",
+            "Links": [
+                {
+                    "rel": "shop",
+                    "href": "https://api.test.sabre.com/v1/shop/flights?origin=TXL&destination=DUS&departuredate=2015-03-28&returndate=2015-03-29&pointofsalecountry=DE"
+                }
+            ],
+            "DestinationRank": 10
+        },
+        {
+            "CurrencyCode": "EUR",
+            "LowestNonStopFare": 99.71,
+            "LowestFare": 99.71,
+            "DestinationLocation": "PMI",
+            "DepartureDateTime": "2015-03-28T00:00:00",
+            "ReturnDateTime": "2015-03-29T00:00:00",
+            "Links": [
+                {
+                    "rel": "shop",
+                    "href": "https://api.test.sabre.com/v1/shop/flights?origin=TXL&destination=PMI&departuredate=2015-03-28&returndate=2015-03-29&pointofsalecountry=DE"
+                }
+            ],
+            "DestinationRank": 11
+        }
+    ],
+    "Links": [
+        {
+            "rel": "self",
+            "href": "https://api.test.sabre.com/v1/shop/flights/fares?origin=TXL&departuredate=2015-03-28&returndate=2015-03-29&pointofsalecountry=DE&topdestinations=50"
+        },
+        {
+            "rel": "linkTemplate",
+            "href": "https://api.test.sabre.com/v1/shop/flights/fares?origin=<origin>&departuredate=<departuredate>&returndate=<returndate>&location=<location>&theme=<theme>&minfare=<minfare>&maxfare=<maxfare>&lengthofstay=<lengthofstay>&earliestdeparturedate=<earliestdeparturedate>&latestdeparturedate=<latestdeparturedate>&pointofsalecountry=<pointofsalecountry>&region=<region>&topdestinations=<topdestinations>"
+        }
+    ]
+}

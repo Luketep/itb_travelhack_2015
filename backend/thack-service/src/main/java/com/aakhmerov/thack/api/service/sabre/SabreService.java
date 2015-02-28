@@ -1,7 +1,9 @@
 package com.aakhmerov.thack.api.service.sabre;
 
+import com.aakhmerov.thack.api.service.sabre.jackson.MyNameStrategy;
 import com.aakhmerov.thack.api.service.sabre.tos.SabreDestinationTO;
 import com.aakhmerov.thack.api.service.sabre.tos.SabreDestinationWrapperTO;
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.http.HttpResponse;
@@ -68,9 +70,9 @@ public class SabreService {
         List<SabreDestinationTO> result = null;
 
         HttpGet request = new HttpGet(buildUri( from,  departure,  arrival));
-        request.addHeader(header,obtainAuth());
-        request.addHeader("Authorization","Bearer");
-        request.addHeader("accept", "application/json");
+//        request.addHeader(header,);
+        request.addHeader("Authorization","Bearer " + obtainAuth());
+//        request.addHeader("accept", "application/json");
 
 //        VHpsak0yZGhURTg9OlZqRTZielZ2ZDJRMmNqaHpZMng0ZUdzd1pqcEVSVlpEUlU1VVJWSTZSVmhV
 
@@ -79,7 +81,8 @@ public class SabreService {
         CloseableHttpClient client = HttpClientBuilder.create().build();
         try {
             CloseableHttpResponse response = client.execute(request);
-            result = parseResult(EntityUtils.toString(response.getEntity()));
+            String v = EntityUtils.toString(response.getEntity());
+            result = parseResult(v);
         } catch (IOException e) {
             logger.error("cant get destinations from sabre",e);
         }
@@ -98,6 +101,7 @@ public class SabreService {
         try {
             HashMap map = objectMapper.readValue(result, HashMap.class);
             tokenOnly = (String) map.get("access_token");
+//            tokenOnly = tokenOnly.substring(tokenOnly.indexOf(":")+1,tokenOnly.length());
         } catch (IOException e) {
             logger.error("cant map response",e);
         }
@@ -105,9 +109,9 @@ public class SabreService {
     }
 
     private ObjectMapper getObjectMapper() {
-        ObjectMapper result = new ObjectMapper();
-
-        return result;
+        ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+        return objectMapper;
     }
 
     /**
@@ -144,8 +148,10 @@ public class SabreService {
      * @param s
      * @return
      */
-    private List<SabreDestinationTO> parseResult(String s) {
-        ObjectMapper objectMapper = new ObjectMapper();
+    public List<SabreDestinationTO> parseResult(String s) {
+        ObjectMapper objectMapper = getObjectMapper();
+        objectMapper.setPropertyNamingStrategy(new MyNameStrategy());
+
         SabreDestinationWrapperTO parsed = null;
         try {
             parsed = objectMapper.readValue(s,SabreDestinationWrapperTO.class);
@@ -180,8 +186,8 @@ public class SabreService {
         return uri;
     }
 
-    private String format(DateTime date) {
-        DateTimeFormatter format = DateTimeFormat.forPattern("YYYY-MM-DD");
+    public String format(DateTime date) {
+        DateTimeFormatter format = DateTimeFormat.forPattern("YYYY-MM-dd");
         return format.print(date);
     }
 
