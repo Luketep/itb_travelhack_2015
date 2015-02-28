@@ -1,0 +1,87 @@
+{
+    "source": "Berlin",
+    "date" : "28.02.2015",
+    "destinations" : [
+        {
+            "id" : 1,
+            "country" : "Germany",
+            "city" : "Hamburg",
+            "flight" : {
+                "to": {
+                    "duration" : "4h23m",
+                    "date" : "27.02.05",
+                    "departureTime" : "19:00",
+                    "price" : 200,
+                    "flightOptions" : [
+                        {
+                            "name" : "meal",
+                            "price" : 1000
+                        },
+                        {
+                            "name" : "businessClass",
+                            "price" : 100
+                        },
+                        {
+                            "name" : "newspaper",
+                            "price" : 100
+                        },
+                        {
+                            "name" : "2kg luggage",
+                            "price" : 100
+                        }
+                    ]
+                },
+                "from" : {
+                    "duration" : "1h23m",
+                    "date" : "29.02.05",
+                    "departureTime" : "19:00",
+                    "price" : 200,
+                    "flightOptions" : [
+                        {
+                            "name" : "meal",
+                            "price" : 1000
+                        },
+                        {
+                            "name" : "businessClass",
+                            "price" : 100
+                        },
+                        {
+                            "name" : "newspaper",
+                            "price" : 100
+                        },
+                        {
+                            "name" : "2kg luggage",
+                            "price" : 100
+                        }
+                    ]
+                }
+            },
+            "attractions" : [
+                {
+                    "name" : "Theater",
+                    "price" : 10,
+                    "additionalInfo" : "evening 29.02 - 19:00",
+                    "address" : "Sample str. 19"
+                },
+                {
+                    "name" : "Bike tour",
+                    "price" : 10,
+                    "additionalInfo" : "morning 29.02 - 10:00",
+                    "address" : "Sample str. 11"
+                }
+            ],
+            "weather" : [
+                {
+                    "date" : "29.02",
+                    "temperature" : "10C",
+                    "type" : "sunny"
+                },
+                {
+                    "date" : "28.02",
+                    "temperature" : "10C",
+                    "type" : "raining"
+                }
+            ]
+        }
+    ]
+}
