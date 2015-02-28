@@ -1,0 +1,59 @@
+{
+  "name": "tbd",
+  "version": "0.0.1",
+  "description": "tbd",
+  "author": "Philip Hoedtke <philiphoedtke@goolgemail.com>",
+  "contributors": [
+    {
+      "name": "",
+      "email": ""
+    }
+  ],
+  "bin": {
+    "module-name": ""
+  },
+  "scripts": {
+    "test": "",
+    "start": "",
+    "predeploy": "",
+    "postdeploy": "",
+    "prepublish": ""
+  },
+  "main": "",
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "keywords": [],
+  "dependencies": {
+    "gulp": "*",
+    "express": "*",
+    "phantomjs": "*",
+    "qunitjs": "*",
+    "gulp-qunit": "*",
+    "gulp-notify": "*",
+    "gulp-stylus": "*",
+    "gulp-minify-css": "*",
+    "gulp-jshint": "*",
+    "gulp-uglify": "*",
+    "gulp-imagemin": "*",
+    "gulp-rename": "*",
+    "gulp-concat": "*",
+    "del": "*"
+  },
+  "devDependencies": {
+    "assume": "",
+    "pre-commit": "",
+    "qunit": "*",
+    "vows": ""
+  },
+  "preferGlobal": true,
+  "publishConfig": {},
+  "subdomain": "",
+  "analyze": true,
+  "license": "",
+  "private": true
+}
