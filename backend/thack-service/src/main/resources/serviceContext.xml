@@ -9,14 +9,7 @@
     <import resource="classpath*:domainContext.xml"/>
     <!--<import resource="classpath*:infrastructure.xml"/>-->
 
-    <bean id="placeholderConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-        <property name="locations">
-            <list>
+    <context:property-placeholder location="classpath:service.properties" order="0" ignore-unresolvable="true"/>
 
-                <value>classpath:service.properties</value>
-
-            </list>
-        </property>
-    </bean>
 
 </beans>
