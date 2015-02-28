@@ -5,4 +5,4 @@ http://hub.lh.com/hackathon
 http://www-getyourguide-com-test3.gygtest.com/thack
 
 to run backend:
-mvn -Plaunch clean package
+mvn -DskipTests -Plaunch clean package
