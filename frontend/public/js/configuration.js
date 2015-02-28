@@ -9,7 +9,8 @@ require.config({
 		'Mustache': 'libs/mustache',
 		'text': 'libs/text',
 		'json2': 'libs/json2-min',
-		'bootstrap': 'libs/bootstrap-min'
+		'bootstrap': 'libs/bootstrap-min',
+		'date': 'libs/date'
 	},
 	shim: {
 		'bootstrap': {

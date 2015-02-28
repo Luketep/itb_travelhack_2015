@@ -21,7 +21,7 @@ function SiteApplicationDefined(
 		initialize: function initialized() {
 			this.router = new Router();
 			Backbone.history.start();
-			this.view = new SiteView();
+			this.view = new SiteView();	
 		},
 		render: function render() {
 			this.view.render();
