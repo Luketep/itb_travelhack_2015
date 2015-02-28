@@ -1,5 +1,8 @@
 package com.aakhmerov.thack.api.service.gyg;
 
+import com.aakhmerov.thack.api.service.gyg.tos.GygResponseTO;
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.utils.URIBuilder;
@@ -28,8 +31,8 @@ public class GygService {
     @Value("${gyg.endpoint}")
     private String endpoint;
 
-    public String getTours(String iata) {
-        String result= null;
+    public GygResponseTO getTours(String iata) {
+        GygResponseTO result= null;
         HttpGet request = new HttpGet(getURI(iata));
         request.addHeader("X-ACCESS-TOKEN",token);
         request.addHeader("Accept","application/json");
@@ -37,7 +40,7 @@ public class GygService {
         CloseableHttpClient client = HttpClientBuilder.create().build();
         try {
             CloseableHttpResponse response = client.execute(request);
-            result = EntityUtils.toString(response.getEntity());
+            result = this.parseResponse(EntityUtils.toString(response.getEntity()));
         } catch (IOException e) {
             logger.error("cant get destinations from sabre",e);
         }
@@ -57,5 +60,17 @@ public class GygService {
             logger.error("cant build uri",e);
         }
         return uri;
+    }
+
+    public GygResponseTO parseResponse(String response) {
+        ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+        GygResponseTO result = null;
+        try {
+             result = objectMapper.readValue(response, GygResponseTO.class);
+        } catch (IOException e) {
+            logger.error("cant parse gyg result",e);
+        }
+        return result;
     }
 }
