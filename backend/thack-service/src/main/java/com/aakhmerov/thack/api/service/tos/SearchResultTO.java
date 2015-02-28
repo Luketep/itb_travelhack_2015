@@ -1,10 +1,12 @@
 package com.aakhmerov.thack.api.service.tos;
 
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
 
 /**
  * Created by aakhmerov on 28.02.15.
  */
+@XmlRootElement
 public class SearchResultTO {
     private String source;
     private String weekend;

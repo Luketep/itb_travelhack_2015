@@ -1,8 +1,11 @@
 package com.aakhmerov.thack.api.service.tos;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  * Created by aakhmerov on 28.02.15.
  */
+@XmlRootElement
 public class FlightOptionTO {
     private String name;
     private Long price;

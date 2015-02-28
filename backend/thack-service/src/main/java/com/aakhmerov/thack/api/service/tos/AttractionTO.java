@@ -2,9 +2,12 @@ package com.aakhmerov.thack.api.service.tos;
 
 import org.joda.time.DateTime;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  * Created by aakhmerov on 28.02.15.
  */
+@XmlRootElement
 public class AttractionTO {
     private String name;
     private Long price;

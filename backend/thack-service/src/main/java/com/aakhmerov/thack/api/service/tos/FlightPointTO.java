@@ -2,12 +2,14 @@ package com.aakhmerov.thack.api.service.tos;
 
 import org.joda.time.DateTime;
 
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
 
 /**
  * Created by aakhmerov on 28.02.15.
  *
  */
+@XmlRootElement
 public class FlightPointTO {
     private String duration;
     private DateTime date;
