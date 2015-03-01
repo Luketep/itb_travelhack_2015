@@ -87,12 +87,12 @@ function GraphView(
             });
 
             this.attachIcons(filtered);
-
         },
 
         attachIcons: function(singleNode) {
 
             singleNode.append('image')
+                .attr('class', 'noOpac')
                 .attr("xlink:href", "/images/bus.png")
                 .attr("width", "30px")
                 .attr("height", "30px")
@@ -103,6 +103,7 @@ function GraphView(
                     return 60;
                 });
             singleNode.append('image')
+                .attr('class', 'noOpac')
                 .attr("xlink:href", "/images/theater.png")
                 .attr("width", "30px")
                 .attr("height", "30px")
@@ -113,6 +114,7 @@ function GraphView(
                     return -15;
                 });
             singleNode.append('image')
+                .attr('class', 'noOpac')
                 .attr("xlink:href", "/images/hotel_4star.png")
                 .attr("width", "30px")
                 .attr("height", "30px")
@@ -123,6 +125,7 @@ function GraphView(
                     return 135;
                 });
             singleNode.append('image')
+                .attr('class', 'noOpac')
                 .attr("xlink:href", "/images/foot.png")
                 .attr("width", "30px")
                 .attr("height", "30px")
@@ -133,6 +136,7 @@ function GraphView(
                     return 5;
                 });
             singleNode.append('image')
+                .attr('class', 'noOpac')
                 .attr("xlink:href", "/images/dining.png")
                 .attr("width", "30px")
                 .attr("height", "30px")
@@ -143,6 +147,7 @@ function GraphView(
                     return 5;
                 });
             singleNode.append('image')
+                .attr('class', 'noOpac')
                 .attr("xlink:href", "/images/beach.png")
                 .attr("width", "30px")
                 .attr("height", "30px")
@@ -153,6 +158,7 @@ function GraphView(
                     return 60;
                 });
             singleNode.append('image')
+                .attr('class', 'noOpac')
                 .attr("xlink:href", "/images/bike.png")
                 .attr("width", "30px")
                 .attr("height", "30px")
@@ -163,6 +169,7 @@ function GraphView(
                     return 115;
                 });
             singleNode.append('image')
+                .attr('class', 'noOpac')
                 .attr("xlink:href", "/images/sailing.png")
                 .attr("width", "30px")
                 .attr("height", "30px")

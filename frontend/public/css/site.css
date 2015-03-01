@@ -63,3 +63,16 @@ body {
 	left: 10px;
 	float: right;
 }
+
+#main {
+	position: relative;
+	top: 75px;
+}
+
+.noOpac {
+	opacity: 1 !important;
+}
+
+.noOpac:hover {
+	opacity: 0.5 !important;
+};
