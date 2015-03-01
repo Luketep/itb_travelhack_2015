@@ -79,6 +79,95 @@ function GraphView(
                 .attr("class", "link")
                 .attr("d", diagonal);
 
+            this.attachIcons(nodeEnter);
+        },
+
+        attachIcons: function(singleNode) {
+debugger;
+            if (singleNode.children) {
+                return;
+            }
+
+            singleNode.append('image')
+                .attr("xlink:href", "/images/bus.png")
+                .attr("width", "30px")
+                .attr("height", "30px")
+                .attr("y", function(d) {
+                    return -15;
+                })
+                .attr("x", function(d) {
+                    return 60;
+                });
+            singleNode.append('image')
+                .attr("xlink:href", "/images/theater.png")
+                .attr("width", "30px")
+                .attr("height", "30px")
+                .attr("y", function(d) {
+                    return 60;
+                })
+                .attr("x", function(d) {
+                    return -15;
+                });
+            singleNode.append('image')
+                .attr("xlink:href", "/images/hotel_4star.png")
+                .attr("width", "30px")
+                .attr("height", "30px")
+                .attr("y", function(d) {
+                    return 60;
+                })
+                .attr("x", function(d) {
+                    return 135;
+                });
+            singleNode.append('image')
+                .attr("xlink:href", "/images/foot.png")
+                .attr("width", "30px")
+                .attr("height", "30px")
+                .attr("y", function(d) {
+                    return 5;
+                })
+                .attr("x", function(d) {
+                    return 5;
+                });
+            singleNode.append('image')
+                .attr("xlink:href", "/images/dining.png")
+                .attr("width", "30px")
+                .attr("height", "30px")
+                .attr("y", function(d) {
+                    return 115;
+                })
+                .attr("x", function(d) {
+                    return 5;
+                });
+            singleNode.append('image')
+                .attr("xlink:href", "/images/beach.png")
+                .attr("width", "30px")
+                .attr("height", "30px")
+                .attr("y", function(d) {
+                    return 135;
+                })
+                .attr("x", function(d) {
+                    return 60;
+                });
+            singleNode.append('image')
+                .attr("xlink:href", "/images/bike.png")
+                .attr("width", "30px")
+                .attr("height", "30px")
+                .attr("y", function(d) {
+                    return 115;
+                })
+                .attr("x", function(d) {
+                    return 115;
+                });
+            singleNode.append('image')
+                .attr("xlink:href", "/images/sailing.png")
+                .attr("width", "30px")
+                .attr("height", "30px")
+                .attr("y", function(d) {
+                    return 0;
+                })
+                .attr("x", function(d) {
+                    return 115;
+                });
         },
 
         diagonalPath : function(d) {

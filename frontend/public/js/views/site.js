@@ -45,6 +45,7 @@ function SiteView(
 			return this;
 		},
 		travelDataReceived: function travelDataReceived(travelData) {
+			this.$el.find('#main').removeClass('page1');
 			this.currentView = new ResultView(travelData);
             this.render();
 		}

@@ -41,6 +41,8 @@ function SearchView(
    				//TODO: Do real lookup as nice to have
 			// });
 
+			this.$el.addClass('page1');
+
 			this.$el.html(Mustache.render(template, {
 				date: tplDate,
 				location: source
@@ -49,8 +51,11 @@ function SearchView(
 		},
 		submit: function submit(event) {
 			event.preventDefault();
+
 			var source = this.$el.find('#source').val(),
 				date = this.$el.find('#startDate').val()
+
+			this.$el.find('#airplane').addClass('loading');
 
 			this.model.set({
 				source: source,
