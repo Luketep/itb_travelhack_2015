@@ -35,7 +35,7 @@ function SearchView(
 
 			this.$el.html(Mustache.render(template, {
 				date: tplDate,
-				location: 'Berlin'
+				location: 'TXL'
 			}));
 			return this;
 		},
@@ -47,7 +47,7 @@ function SearchView(
 			this.model.set({
 				source: source,
 				date: date
-			})
+			});
 
 			this.model.fetch({
 				success: this.success.bind(this),
