@@ -1,10 +1,12 @@
 package com.aakhmerov.thack.api.service.lh.tos;
 
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
 
 /**
  * Created by aakhmerov on 01.03.15.
  */
+@XmlRootElement
 public class JourneyTO {
     private PriceTO Price;
     private String PlatingCarrier;

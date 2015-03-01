@@ -2,9 +2,12 @@ package com.aakhmerov.thack.api.service.lh.tos;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  * Created by aakhmerov on 01.03.15.
  */
+@XmlRootElement
 public class TotalTO {
     private Double sum;
     private String cur;

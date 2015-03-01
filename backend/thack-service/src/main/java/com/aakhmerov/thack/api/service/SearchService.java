@@ -2,6 +2,8 @@ package com.aakhmerov.thack.api.service;
 
 import com.aakhmerov.thack.api.service.gyg.GygService;
 import com.aakhmerov.thack.api.service.gyg.tos.GygResponseTO;
+import com.aakhmerov.thack.api.service.lh.LhService;
+import com.aakhmerov.thack.api.service.lh.tos.LHFlightsTO;
 import com.aakhmerov.thack.api.service.sabre.SabreService;
 import com.aakhmerov.thack.api.service.sabre.tos.SabreDestinationTO;
 import com.aakhmerov.thack.api.service.tos.aggregated.AggregatedDestinationTO;
@@ -28,6 +30,9 @@ public class SearchService {
     @Autowired
     private GygService gygService;
 
+    @Autowired
+    private LhService lhService;
+
     /**
      * Method to request weekend search
      *
@@ -46,12 +51,23 @@ public class SearchService {
         DateTime arrival = departure.plusDays(1);
         List<SabreDestinationTO> destinations = sabreService.getDestinations(from, departure, arrival);
 
+        int i = 0;
         for (SabreDestinationTO destination : destinations) {
+//          TODO: this is crap - get rid of it
+            if (i == 3) {
+                break;
+            }
             AggregatedDestinationTO toAdd = new AggregatedDestinationTO();
             GygResponseTO wrappedTours = gygService.getTours(destination.getDestinationLocation());
             toAdd.setTours(wrappedTours.getData().getTours());
             toAdd.setSabreInfo(destination);
             result.getDestinations().add(toAdd);
+
+            LHFlightsTO flights = lhService.getFlights(from,destination.getDestinationLocation(),departure);
+            if (flights.getJourneys().size() > 0) {
+                toAdd.setLHFlight(flights.getJourneys().get(0).get(0));
+            }
+            i = i+1;
         }
         return result;
     }
