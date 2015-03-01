@@ -48,12 +48,15 @@ function GraphView(
                 .attr("class", "node")
                 .attr("transform", function(d) {
                     return "translate(" + d.x + "," + d.y + ")"; });
+            nodeEnter.on("click", function(d){
+                Backbone.Events.trigger('Graph.DestinationClicked', d);
+            });
 
             nodeEnter.append("image")
                 .attr("class", function (d) {
                     return "node " + d.id;
                 })
-                .attr("xlink:href", "/images/circle.png")
+                .attr("xlink:href", "/images/circle2.png")
                 .attr("width", this.circleSize + "px")
                 .attr("height", this.circleSize + "px");
 

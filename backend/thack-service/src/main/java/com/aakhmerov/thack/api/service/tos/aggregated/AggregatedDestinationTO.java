@@ -2,6 +2,7 @@ package com.aakhmerov.thack.api.service.tos.aggregated;
 
 import com.aakhmerov.thack.api.service.gyg.tos.GygDataTO;
 import com.aakhmerov.thack.api.service.gyg.tos.TourTO;
+import com.aakhmerov.thack.api.service.lh.tos.JourneyTO;
 import com.aakhmerov.thack.api.service.sabre.tos.SabreDestinationTO;
 
 import javax.xml.bind.annotation.XmlRootElement;
@@ -14,6 +15,7 @@ import java.util.List;
 public class AggregatedDestinationTO {
     private SabreDestinationTO sabreInfo;
     private List<TourTO> tours;
+    private JourneyTO LHFlight;
 
     public SabreDestinationTO getSabreInfo() {
         return sabreInfo;
@@ -29,5 +31,14 @@ public class AggregatedDestinationTO {
 
     public void setTours(List<TourTO> tours) {
         this.tours = tours;
+    }
+
+
+    public void setLHFlight(JourneyTO LHFlight) {
+        this.LHFlight = LHFlight;
+    }
+
+    public JourneyTO getLHFlight() {
+        return LHFlight;
     }
 }
