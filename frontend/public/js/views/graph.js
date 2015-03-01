@@ -87,11 +87,9 @@ function GraphView(
             });
 
             this.attachIcons(filtered);
-
         },
 
         attachIcons: function(singleNode) {
-
             singleNode.append('image')
                 .attr("xlink:href", "/images/bus.png")
                 .attr("width", "30px")

@@ -1,4 +1,11 @@
 <p>Summary</p>
 <div class="row">
-    {{totalPrice}}
+    <p class="bg-info">Flight Price : {{flightPrice}}</p>
+
+    {{#tours}}
+    <p class="bg-info">+ {{name}} : {{price}}</p>
+    {{/tours}}
+
+    <p class="bg-info">Total Price : {{totalPrice}}</p>
+
 </div>
