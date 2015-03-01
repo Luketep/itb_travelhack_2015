@@ -22,12 +22,20 @@ function SearchView(
 		events: {
 			'click button[type=submit]': 'submit'
 		},
-		initialize: function initialize() {
+		initialize: function initialize(options) {
 			this.model = new SearchModel();
+
+			if (options.date) {
+				this.model.set('date', options.date);
+			}
+			if (options.source) {
+				this.model.set('source', options.source);
+			}
 		},
 		render: function render() {
-			var nextWeekend = Date.today().moveToDayOfWeek(6),
-				tplDate = nextWeekend.toISOString().substr(0, 10);
+			var nextWeekend = this.model.get('date'),
+				tplDate = nextWeekend.toISOString().substr(0, 10),
+				source = this.model.get('source');
 
 			// navigator.geolocation.getCurrentPosition(function(postion) {
    				//TODO: Do real lookup as nice to have
@@ -35,7 +43,7 @@ function SearchView(
 
 			this.$el.html(Mustache.render(template, {
 				date: tplDate,
-				location: 'TXL'
+				location: source
 			}));
 			return this;
 		},

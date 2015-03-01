@@ -26,12 +26,18 @@ function SiteView(
 		el: 'html',
 		events: {},
 		initialize: function initialize() {
+			Backbone.Events.on('Travel.DateReceived', this.travelDataReceived.bind(this));
+			
 			this.model = new SiteModel();
+			
 			this.$head = this.$el.find('head');
 			this.$title = this.$head.find('title');
 			this.$body = this.$el.find('body');
-			this.currentView = new SearchView();
-			Backbone.Events.on('Travel.DateReceived', this.travelDataReceived.bind(this));
+			
+			this.currentView = new SearchView({
+				date: this.model.get('nextWeekend'),
+				source: this.model.get('source')
+			});
 		},
 		render: function render() {
 			this.$title.html(Mustache.render(titleTemplate, {}));
