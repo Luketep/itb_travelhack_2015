@@ -8,12 +8,11 @@ body {
 
 
 .node image{
-    opacity: .5;
+    opacity: .3;
 }
 
 .node image:hover {
-
-    opacity: .9;
+    opacity: 1;
 }
 
 .node text {
