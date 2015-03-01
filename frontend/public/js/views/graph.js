@@ -82,14 +82,15 @@ function GraphView(
                 .attr("class", "link")
                 .attr("d", diagonal);
 
-            this.attachIcons(nodeEnter);
+            var filtered =nodeEnter.filter(function(el){
+                return el.children ? false : true;
+            });
+
+            this.attachIcons(filtered);
+
         },
 
         attachIcons: function(singleNode) {
-debugger;
-            if (singleNode.children) {
-                return;
-            }
 
             singleNode.append('image')
                 .attr("xlink:href", "/images/bus.png")
