@@ -48,6 +48,9 @@ function GraphView(
                 .attr("class", "node")
                 .attr("transform", function(d) {
                     return "translate(" + d.x + "," + d.y + ")"; });
+            nodeEnter.on("click", function(d){
+                Backbone.Events.trigger('Graph.DestinationClicked', d);
+            });
 
             nodeEnter.append("image")
                 .attr("class", function (d) {
