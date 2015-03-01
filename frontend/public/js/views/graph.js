@@ -90,7 +90,6 @@ function GraphView(
         },
 
         attachIcons: function(singleNode) {
-
             singleNode.append('image')
                 .attr('class', 'noOpac')
                 .attr("xlink:href", "/images/bus.png")
