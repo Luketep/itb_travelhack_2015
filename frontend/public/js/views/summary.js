@@ -32,23 +32,35 @@ define([
             },
             updateTourFromGraph: function updateTourFromGraph (tourData){
                 var totalPrice = this.model.get('totalPrice');
-                tourData = {
+
+                var myTourData = {
                     name:"test",
-                    price: 10
+                    price: 0
                 };
-                this.model.get('tours').push(tourData);
-                totalPrice = totalPrice + tourData.price;
-                this.model.set('totalPrice',totalPrice + " EUR ");
+                if (tourData.tours[tourData.tourId] ) {
+                    var gygTour = tourData.tours[tourData.tourId];
+                    myTourData.name = gygTour.title;
+                    myTourData.price = gygTour.price.values.amount;
+                } else {
+                    return;
+                }
+
+                this.model.get('tours').push(myTourData);
+                totalPrice = totalPrice + myTourData.price;
+                this.model.set('totalPrice',totalPrice);
+                this.model.set('totalPriceString',totalPrice + " EUR ");
                 this.render();
             },
-            updateFromGraph: function updateFromGraph(destinationNodeData) {
+            updateFromGraph: function updateFromGraph(destinationNodeData, event) {
+                this.model = new SummaryModel();
+//                this.model.set('tours',new Array());
                 var totalPrice = 0;
                 if (destinationNodeData.sabreInfo) {
                     totalPrice = totalPrice + destinationNodeData.sabreInfo.lowestFare;
                     this.model.set('flightPrice',totalPrice + " EUR ");
                 }
-                this.model.set('tours',[]);
-                this.model.set('totalPrice',totalPrice + " EUR ");
+                this.model.set('totalPrice',totalPrice);
+                this.model.set('totalPriceString',totalPrice + " EUR ");
                 this.render();
             }
         });

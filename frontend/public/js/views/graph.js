@@ -100,6 +100,9 @@ function GraphView(
                 })
                 .attr("x", function(d) {
                     return 60;
+                }).on("click", function(d){
+                    d.tourId = 0;
+                    Backbone.Events.trigger('Graph.TourClicked', d);
                 });
             singleNode.append('image')
                 .attr('class', 'noOpac')
@@ -111,6 +114,9 @@ function GraphView(
                 })
                 .attr("x", function(d) {
                     return -15;
+                }).on("click", function(d){
+                    d.tourId = 1;
+                    Backbone.Events.trigger('Graph.TourClicked', d);
                 });
             singleNode.append('image')
                 .attr('class', 'noOpac')
@@ -122,6 +128,9 @@ function GraphView(
                 })
                 .attr("x", function(d) {
                     return 135;
+                }).on("click", function(d){
+                    d.tourId = 2;
+                    Backbone.Events.trigger('Graph.TourClicked', d);
                 });
             singleNode.append('image')
                 .attr('class', 'noOpac')
@@ -133,6 +142,9 @@ function GraphView(
                 })
                 .attr("x", function(d) {
                     return 5;
+                }).on("click", function(d){
+                    d.tourId = 3;
+                    Backbone.Events.trigger('Graph.TourClicked', d);
                 });
             singleNode.append('image')
                 .attr('class', 'noOpac')
@@ -144,6 +156,9 @@ function GraphView(
                 })
                 .attr("x", function(d) {
                     return 5;
+                }).on("click", function(d){
+                    d.tourId = 4;
+                    Backbone.Events.trigger('Graph.TourClicked', d);
                 });
             singleNode.append('image')
                 .attr('class', 'noOpac')
@@ -155,6 +170,9 @@ function GraphView(
                 })
                 .attr("x", function(d) {
                     return 60;
+                }).on("click", function(d){
+                    d.tourId = 5;
+                    Backbone.Events.trigger('Graph.TourClicked', d);
                 });
             singleNode.append('image')
                 .attr('class', 'noOpac')
@@ -166,6 +184,9 @@ function GraphView(
                 })
                 .attr("x", function(d) {
                     return 115;
+                }).on("click", function(d){
+                    d.tourId = 6;
+                    Backbone.Events.trigger('Graph.TourClicked', d);
                 });
             singleNode.append('image')
                 .attr('class', 'noOpac')
@@ -177,6 +198,9 @@ function GraphView(
                 })
                 .attr("x", function(d) {
                     return 115;
+                }).on("click", function(d){
+                    d.tourId = 7;
+                    Backbone.Events.trigger('Graph.TourClicked', d);
                 });
         },
 
