@@ -6,6 +6,7 @@ define([
 	'jquery',
 	'Mustache',
 	'models/site',
+    'views/graph',
 	'text!/templates/result.html'
 ],
 function SiteView(
@@ -14,6 +15,7 @@ function SiteView(
 	$,
 	Mustache,
 	SiteModel,
+    GraphView,
 	template
 ) {
 	'use strict';
@@ -23,12 +25,13 @@ function SiteView(
 		travelData: undefined,
 		initialize: function initialize(travelData) {
 			this.travelData = travelData;
-			console.log(this.travelData);
+            this.graphView = new GraphView(travelData);
+            console.log(this.travelData);
 		},
 		render: function render() {
-			this.$el.html(Mustache.render(template, {
-				travelData: this.travelData.source + ' ' + this.travelData.date
-			}));
+            this.$el.empty();
+			this.$el.append(Mustache.render(template, {}));
+            this.$el.find('.graphRow').append(this.graphView.render().$el);
 			return this;
 		}
 	});
